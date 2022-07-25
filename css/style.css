@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.phoneImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-height: 80vh;
+    padding: 10px;
+}
+
+.phoneImage img{
+    height: 90vh;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 80vh;
+    padding: 0;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fcfafa;
+    width: 100%;
+    padding: 1em 0;
+    border: 1px solid #b9b9b9;
+}
+
+.instagramLogo{
+    width: 40%;
+    height: 3rem;
+}
+
+.perfilFoto{
+    border-radius: 50%;
+    height: 6rem;
+    margin-top: 1rem;
+}
+
+.box:nth-child(1){
+    min-width: 15rem;
+}   
+
+.continue{
+    background-color: #2743e6;
+    color: #fcfafa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.sair{
+    color: #2743e6;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+p{
+    color: #5a5a5a;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 0.5rem;
+}
+
+span{
+    color: #2743e6;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1em 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+}
+
+.download a img{
+    width: 100%;
+    height: 3em;
+}
+
+@media (max-width: 1024px){
+    main{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    main{
+        width: 80%;
+        background-color: #fcfafa;
+    }
+
+    .phoneImage{
+        display: none;
+    }
+
+    .login{
+        width: 100%;
+        height: 80vh;
+    }
+
+    .box{
+        border: none;
+        background-color: #fcfafa;
+    }
+
+    .opcoes{
+        width: 70%;
+    }
+}
